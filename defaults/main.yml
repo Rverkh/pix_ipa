@@ -1,0 +1,6 @@
+---
+# defaults file for pix_ipa
+ipahost: ""
+ipalogin: ""
+ipapass: ""
+force_dns: True

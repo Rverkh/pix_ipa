@@ -1,0 +1,11 @@
+---
+# tasks file for pix_ipa
+  - name: iprareg
+    ipareg:
+      hostip: "{{ ansible_default_ipv4.address }}"
+      hostname: "{{ zbx_hostname }}"
+      force_dns_zone: "{{ force_dns }}"
+      ipahost: "{{ ipahost }}"
+      ipalogin: "{{ ipalogin }}"
+      ipapass: "{{ ipapass }}"
+    delegate_to: 127.0.0.1
